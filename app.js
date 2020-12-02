@@ -34,9 +34,22 @@ $('#quiz').submit(function (event) {
     }
 
     //Grade value
-    var result = "Your grade is: " + (myGrassColor + myColorScore) + "%.";
+    var resultScore = myGrassColor + myColorScore;
+    var gradeMessage = "Your grade is:";
+    var resultMessage = resultScore + "%";
 
-    $('#grade').html(result); // Display graded score result.
+    // Display graded score result.
+    $('#gradeMessage').html(gradeMessage); 
+    $('#resultMessage').html(resultMessage); 
+
+    //Grade background-color changes based on score value.
+    if (resultScore === 0) {
+        $('#results').removeClass('bg-warning bg-success text-dark').addClass('bg-danger text-white');
+    } else if (resultScore > 0 && resultScore <= 99) {
+        $('#results').removeClass('bg-success bg-danger text-white').addClass('bg-warning text-dark');
+    } else if (resultScore === 100) {
+        $('#results').removeClass('bg-warning bg-danger text-dark').addClass('bg-success text-white');
+    };
 
     event.preventDefault(); // Required to prevent page from refreshing after submitting form.
 

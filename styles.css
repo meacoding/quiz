@@ -1,0 +1,35 @@
+body {
+    padding: 50px 20px 0;
+}
+
+@media (min-width: 480px) {
+    body {
+        padding: 30px;
+    }
+}
+
+@media (min-width: 576px) {
+    body {
+        padding: 50px 30px;
+    }
+}
+
+#results {
+    padding: 10px;
+    margin-top: 20px;
+}
+
+#gradeMessage {
+    text-align: center;
+    margin: auto;
+    padding: 5px 0; 
+    font-size: 20px;
+}
+
+#resultMessage {
+    text-align: center;
+    margin: auto;
+    padding: 5px 0;
+    font-size: 40px;
+    font-weight: bold;
+}
