@@ -16,7 +16,7 @@ To stretch my core programming muscles.
 
 ## What I did
 
-A quiz powered by JavaScript and jQuery. For mobile screens only.
+A quiz powered by JavaScript and jQuery. Optimized for small and medium screens.
 
 ## License
 None.
